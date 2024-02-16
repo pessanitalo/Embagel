@@ -78,3 +78,6 @@ _[Ss]cripts
 *.vsidx
 *.bin
 *.dll
+*.map
+*.css
+*.js

@@ -1,8 +1,7 @@
 ﻿namespace Embagel.Domain.Models
 {
-    public class Endereco
+    public class Endereco : Entity
     {
-        public int Id { get; set; }
         public string Logradouro { get; set; }
         public string Cep { get; set; }
     }

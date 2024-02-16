@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Embagel.Domain", "Embagel.Domain\Embagel.Domain.csproj", "{EC0B7355-883D-4912-B610-3A8DA8F2E994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Embagel.Domain", "Embagel.Domain\Embagel.Domain.csproj", "{EC0B7355-883D-4912-B610-3A8DA8F2E994}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Embagel.Data", "Embagel.Data\Embagel.Data.csproj", "{9ECB6F98-5696-4F05-81ED-2E0F0038346D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Embagel.Data", "Embagel.Data\Embagel.Data.csproj", "{9ECB6F98-5696-4F05-81ED-2E0F0038346D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Embagel.App", "Embagel.App\Embagel.App.csproj", "{2626FCFE-A2BE-4455-9F61-94F6C48A356B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9ECB6F98-5696-4F05-81ED-2E0F0038346D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ECB6F98-5696-4F05-81ED-2E0F0038346D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ECB6F98-5696-4F05-81ED-2E0F0038346D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2626FCFE-A2BE-4455-9F61-94F6C48A356B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2626FCFE-A2BE-4455-9F61-94F6C48A356B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2626FCFE-A2BE-4455-9F61-94F6C48A356B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2626FCFE-A2BE-4455-9F61-94F6C48A356B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
