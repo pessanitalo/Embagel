@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Embagel.Data\Embagel.Data.csproj" />
+    <ProjectReference Include="..\Embagel.Domain\Embagel.Business.csproj" />
   </ItemGroup>
 
 </Project>

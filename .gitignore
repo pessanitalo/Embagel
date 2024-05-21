@@ -81,3 +81,5 @@ _[Ss]cripts
 *.map
 *.css
 *.js
+*.v2
+*.config

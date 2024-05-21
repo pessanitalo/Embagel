@@ -1,4 +1,4 @@
-﻿namespace Embagel.Domain.Models
+﻿namespace Embagel.Business.Models
 {
     public class Vendedor : Pessoa
     {

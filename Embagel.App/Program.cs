@@ -1,4 +1,7 @@
+using Embagel.Business.Interface;
+using Embagel.Business.Service;
 using Embagel.Data.Context;
+using Embagel.Data.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace Embagel.App
@@ -16,6 +19,11 @@ namespace Embagel.App
 
             builder.Services.AddDbContext<DataContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddScoped<IFabricanteService, FabricanteService>();
+            builder.Services.AddScoped<IFabricanteRepository, FabricanteRepository>();
+            builder.Services.AddScoped<IProdutoService, ProdutoService>();
+            builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 
             var app = builder.Build();
 

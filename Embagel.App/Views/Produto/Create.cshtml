@@ -1,0 +1,60 @@
+﻿@model Embagel.App.Models.ProdutoViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Novo Produto</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <div class="form-group">
+                    <label asp-for="Produto.FabricanteId" class="control-label"></label>
+                    <select asp-for="Produto.FabricanteId" asp-items="@(new SelectList(Model.Fabricantes,"Id","RazaoSocial"))" class="form-control"></select>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Produto.Descricao" class="control-label"></label>
+                    <input asp-for="Produto.Descricao" class="form-control" />
+                    <span asp-validation-for="Produto.Descricao" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Produto.ValorUnitario" class="control-label"></label>
+                    <input asp-for="Produto.ValorUnitario" class="form-control" />
+                    <span asp-validation-for="Produto.ValorUnitario" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Produto.Cor" class="control-label"></label>
+                    <input asp-for="Produto.Cor" class="form-control" />
+                    <span asp-validation-for="Produto.Cor" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Produto.QuantidadeEstoque" class="control-label"></label>
+                    <input asp-for="Produto.QuantidadeEstoque" class="form-control" />
+                    <span asp-validation-for="Produto.QuantidadeEstoque" class="text-danger"></span>
+                </div>
+
+            </div>
+            <div class="form-group btn-create">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
